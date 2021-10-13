@@ -8,19 +8,36 @@ body {
     width: fit-content;
 }
 
-.upper-table, .lower-table, .series{
+.upper-table, .lower-table, .series, .num {
     display: flex;
 }
 
 .lower-table {
-    margin-top: 5rem;
-    justify-content: flex-start;
+    margin: 5rem 0 5rem 42rem;
+    width: fit-content;
 }
 
 .series {
     justify-content: flex-end;
     flex-direction: column;
     position: relative;
+}
+
+.num {
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.period {
+    flex-direction: column-reverse;
+    margin: 0 0 5px 0;
+    height: 12rem;
+    width: 5rem;
+}
+
+.group {
+    flex-direction: row;
 }
 
 .element {
@@ -37,11 +54,8 @@ body {
     background-color: white;
 }
 
-.whitespace {
-    width: 12rem;
-    height: 12rem;
-    margin: 1px;
-    border: 2px solid transparent;
+.element > * {
+    font-weight: bold;
 }
 
 .element:hover {
@@ -50,54 +64,54 @@ body {
 }
 
 .ordinal-num {
-    font-weight: bold;
-    grid-column: 1;
+    grid-column: 1 / 2;
     font-size: 2em;
+    margin: 10px 0 0 10px;
 }
 
 .weight {
-    font-weight: bold;
-    position: absolute;
-    top: 0;
-    right: 0;
-    text-align: right;
-    grid-column: 3;
+    grid-column: 3 / 4;
     font-size: 2em;
+    margin: 10px 10px 0 0;
 }
 
 .symbol {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
     text-align: center;
-    grid-column: 2 / 3;
+    grid-column: 1 / span 3;
     grid-row: 2 / 3;
     font-size: 5em;
 }
 
 .name {
-    font-weight: bold;
     text-align: center;
-    grid-column: 2 / 3;
+    grid-column: 1 / span 3;
     grid-row: 3 / 4;
     font-size: 2em;
 }
 
 .electronegativity {
-    font-weight: bold;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    grid-column: 1;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
     font-size: 2em;
+    margin: 0 0 10px 10px;
 }
 
 .density {
-    font-weight: bold;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    grid-column: 3;
+    text-align: right;
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
     font-size: 2em;
+    margin: 0 10px 10px 0;
+}
+
+label {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .gas {
