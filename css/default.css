@@ -1,0 +1,148 @@
+body {
+    margin: 40px;
+}
+
+.container {
+    border: 1px solid black;
+    background-color: whitesmoke;
+    width: fit-content;
+}
+
+.upper-table, .lower-table, .series{
+    display: flex;
+}
+
+.lower-table {
+    margin-top: 5rem;
+    justify-content: flex-start;
+}
+
+.series {
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+}
+
+.element {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    margin: 1px;
+    border: 2px solid black;
+    font-size: 12px;
+    transition: transform .2s;
+    background-color: white;
+}
+
+.whitespace {
+    width: 12rem;
+    height: 12rem;
+    margin: 1px;
+    border: 2px solid transparent;
+}
+
+.element:hover {
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+.ordinal-num {
+    font-weight: bold;
+    grid-column: 1;
+    font-size: 2em;
+}
+
+.weight {
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    grid-column: 3;
+    font-size: 2em;
+}
+
+.symbol {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 5em;
+}
+
+.name {
+    font-weight: bold;
+    text-align: center;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    font-size: 2em;
+}
+
+.electronegativity {
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    grid-column: 1;
+    font-size: 2em;
+}
+
+.density {
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    grid-column: 3;
+    font-size: 2em;
+}
+
+.gas {
+    color: red;
+}
+
+.liquid {
+    color: blue;
+}
+
+.alkali-metal {
+    background-color: rgb(219, 79, 79);
+}
+
+.alkaline-earth-metal {
+    background-color: rgb(218, 127, 221);
+}
+
+.transition-metal {
+    background-color: rgb(39, 240, 240);
+}
+
+.metal {
+    background-color: rgb(143, 140, 140);
+}
+
+.semi-metal {
+    background-color: rgb(235, 209, 176);
+}
+
+.nonmetal {
+    background-color: rgb(127, 255, 155);
+}
+
+.halogene {
+    background-color: #fbe204;
+}
+
+.noble-gas {
+    background-color: rgb(151, 45, 250);
+}
+
+.radioactive {
+    background-image: url("../img/radiation_64x64.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 32px 32px;
+}
