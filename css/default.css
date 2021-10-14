@@ -2,6 +2,12 @@ body {
     margin: 40px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
 .container {
     border: 1px solid black;
     background-color: whitesmoke;
@@ -10,6 +16,11 @@ body {
 
 .upper-table, .lower-table, .series, .num {
     display: flex;
+}
+
+.upper-table {
+    margin: 0 1rem 0 1rem;
+    width: fit-content;
 }
 
 .lower-table {
@@ -48,7 +59,6 @@ body {
     width: 12rem;
     height: 12rem;
     margin: 1px;
-    border: 2px solid black;
     font-size: 12px;
     transition: transform .2s;
     background-color: white;
@@ -152,6 +162,18 @@ label {
 
 .noble-gas {
     background-color: rgb(151, 45, 250);
+}
+
+.no-categorie {
+    background-color: rgb(221, 215, 215);
+}
+
+.lanthanoid {
+    background-color: rgb(219, 174, 121);
+}
+
+.actinoid {
+    background-color: rgb(223, 152, 71);
 }
 
 .radioactive {
